@@ -10,7 +10,6 @@
 
 .top-portion{
 	width: 100%;
-	float: left;
 	background-color: #fff200;
 }
 
@@ -29,6 +28,7 @@
 
 .row {
 	margin-bottom: 1em;
+
 }	
 /* no need to have margin-bottom for the last row */
 
@@ -41,9 +41,9 @@
 	margin-left: 1.5%;
 }
 
-[class*="-col"]:last-child{
+/*[class*="-col"]:last-child{
 	margin-left: 0;
-}
+}*/
 
 /* width = (100% - 11* 1.5%)/12 */
 .one-col {
@@ -106,9 +106,6 @@
 	background-color: #EEE;
 }
 
-.one-col {
-	background-color: none;
-}
 
 /*6.958% + 1.5% =8.458% */
 .one-offset {
@@ -155,11 +152,7 @@
 	margin-left: 91.54%;
 }
 
-a {
-	text-decoration: none;
-}
-
-.top_portion a {
+.top-portion nav a {
 	margin-left: 5px;
 }
  
@@ -168,158 +161,6 @@ a {
 	color: #fff200;
 }
 
-/* * is the wide card in css;
-*/
-*, *:before, *:after {
-	box-size: border-box;
-}
-
-.grid {
-	width: 100%;
-}
-
-.top-portion{
-	width: 100%;
-	float: left;
-	background-color: #fff200;
-}
-
-/* [class*="-col"] matches all the classes with name containing "col"
-*/
-.grid, .row, [class*="-col"]{
-	margin: 0;
-	padding: 0;
-}
-/* notice :after from css3*/
-.grid:after, .row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row {
-	margin-bottom: 1em;
-}
-/* no need to have margin-bottom for the last row */
-
-.row:last-child {
-	margin-bottom: 0;
-}
-
-[class*="-col"]{
-	float:left;
-	margin-left: 1.5%;
-}
-
-[class*="-col"]:last-child{
-	margin-left: 0;
-}
-
-/* width = (100% - 11* 1.5%)/12 */
-.one-col {
-	width: 6.958%;
-}
-
-.two-col {
-	width: 15.41%;
-}
-
-.three-col {
-	width: 23.87%;
-}
-
-.four-col {
-	width: 32.33%;
-}
-
-.five-col {
-	width: 40.79%;
-}
-
-.six-col {
-	width: 49.25%;
-}
-
-.seven-col {
-	width: 57.70%;
-}
-
-.eight-col {
-	width: 66.16%;
-}
-
-.nine-col {
-	width: 74.62%;
-}
-
-.ten-col {
-	width: 83.08%;
-}
-
-.eleven-col {
-	width: 91.54%;
-}
-
-.twelve-col {
-	width: 100%;
-}
-
-.grid {
-	background-color: #999;
-}
-
-.row {
-	background-color: #BBB;
-}
-
-[class*="-col"]{
-	background-color: #EEE;
-}
-/*6.958% + 1.5% =8.458% */
-.one-offset {
-	margin-left: 8.458%;
-}
-
-.two-offset {
-	margin-left: 16.91%;
-}
-
-.three-offset {
-	margin-left: 25.37%;
-}
-
-.four-offset {
-	margin-left: 33.83%;
-}
-
-.five-offset {
-	margin-left: 42.29%;
-}
-
-.six-offset {
-	margin-left: 50.79%;
-}
-
-.seven-offset {
-	margin-left: 59.20%;
-}
-
-.eight-offset {
-	margin-left: 67.66%;
-}
-
-.nine-offset {
-	margin-left: 76.12%;
-}
-
-.ten-offset {
-	margin-left: 84.58%;
-}
-
-.eleven-offset {
-	margin-left: 91.54%;
-}
-
 a {
 	text-decoration: none;
 }
@@ -328,35 +169,34 @@ a {
 	color: #fff200;
 }
 
-.top_portion {
-	background-color: #fff200;
-}
 
-.top_portion>a {
+.top-portion nav>a {
 	margin-left: 16px;
 	font-size: 30px;
 	color: #fff;
+	font-family: Georgia;
 }
 
-.top_portion ul {
+.top-portion ul {
 	float: right;
     margin-right: 16px;
 }    
 
-.top_portion ul li {
+.top-portion ul li {
 	display:inline-block;
 	margin: 2px;
  	font-size: 10px;
  	vertical-align: text-top;
 }
 
-.one-col p {
-	visibility: hidden;
-}
 
 .smalltext {
 	font-size: 12px;
 	margin: 0;
+}
+
+.smalltext>a:hover{
+	text-decoration: underline;
 }
 
 .info-page {
@@ -367,26 +207,22 @@ a {
 	font-size: 24px;
 }
 
+.page-number{
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 18px;
+}
 #go-back, #go-back-one {
 	float: left;
-	
 	line-height: 50px;
 	vertical-align: middle;
 	
 }
 #go-forward, #go-forward-one {
 	float: right;
-	
 	line-height: 50px;
 	vertical-align: middle;
-}
-
-.row {
-	margin-top: 10%;
-}
-
-.one-col {
-	background-color: transparent;
 }
 
 .embedcontent {
@@ -394,12 +230,8 @@ a {
 	font-size: 12px;
 }
 
-.embedcontent i{
+.embedcontent i {
 	margin-right: 5px;
-}
-
-.three-col {
-	background-color: rgba(0,0,0,0.5);
 }
 
 .topcontent {
@@ -436,12 +268,6 @@ a {
 	font-size: 20px;
 }
 
-.three-col {
-	margin-left: 20px;
-	padding-left: 0;
-	position: fixed;
-}
-
 .seven-col p, .seven-col h3 {
 	width: 56%;
 	margin-left: auto;
@@ -456,13 +282,18 @@ a {
 	margin-top: 5%;
 }
 
+.three-col {
+	margin-left: 20px;
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+}
+
 .row .seven-col {
 	position: relative;
-	margin-left: 25.37%;
-	margin-top: 4%;
 }
 
 .row {
+	clear: both;
 	background-image: url("https://cdn2.vox-cdn.com/thumbor/8q4smUH9izoXSzlzuu-Pf1wqYn4=/282x0:3717x2290/420x280/filters:saturation(0.2):colorize(35,40,50,79A8B2):blur(0,0.5)/cdn0.vox-cdn.com/uploads/chorus_image/image/31099897/mars.0.jpg");
 }
 
@@ -487,17 +318,19 @@ h3 i {
 
 .gobackword, .goforward {
 	line-height: 50px;
-	
 }
 
-@media all and (max-width:768 px){
-	[class*="-col"]{
+ol li:first-child, ol li:first-child:before{
+	background-color: #fff200;
+}
+
+@media all and (max-width:768px){
+	
+	[class*="-col"] {
 		width: 100%;
 		margin-bottom: 1em;
 	}
-	.three-col {
-		display: none;
-	}
+	
 	.row:last-child > [class*="-col"]:last-child {
 		margin-bottom: 0;
 	}
@@ -506,9 +339,18 @@ h3 i {
 		margin-left: 0;
 	}
 
-	.row {
-		margin: 0;
+	.three-col {
+		position: static;
+		width: 92%;
+		margin-left: 4%;
+		margin-right: 4%;
 	}
+}
+
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .grid {

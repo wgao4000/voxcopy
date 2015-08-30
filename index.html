@@ -12,35 +12,40 @@ The file also links to an external CSS file. However, Javascript file has to wai
 <body>
 <!--here is the code from thinkful.com regarding different grids"-->
 <section class="grid">
-	<div class="top_portion">
-		<a target="_blank" href="http://www.vox.com">
-		Vox
-		</a>
-		<ul>
-			<li>SHARE/EMBED</li>
-			<li><a href="https://www.facebook.com/Vox"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="https://twitter.com/voxdotcom"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://plus.google.com/+voxdotcom"><i class="fa fa-google-plus"></i></a></li>
-			<li><i class="fa fa-gg-circle"></i></li>
-			<li><a href="http://www
-			.vox.com">EXIT</a></li>
-		</ul>
-	</div>
+	<header class="top-portion">
+		<nav role="navigation">
+			<a target="_blank" href="http://www.vox.com">
+			Vox
+			</a>
+			<ul>
+				<li>SHARE/EMBED</li>
+				<li><a href="https://www.facebook.com/Vox"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/voxdotcom"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://plus.google.com/+voxdotcom"><i class="fa fa-google-plus"></i></a></li>
+				<li><i class="fa fa-gg-circle"></i></li>
+				<li><a href="http://www.vox.com">EXIT</a></li>
+			</ul>
+		</nav>	
+	</header>
 	<div class="row">
-		<div class="three-col">
-			<div class="topcontent">
+		<aside class="three-col" role="contentinfo">
+			<header class="topcontent">
 				<h2>Human exploration of Mars, explained</h2>
-				<p class="smalltext"> Edited by <a href="http://www.vox.com/authors/joseph-stromberg">JOSEPH STRMBERG</a></p>
-				<p class="smalltext"> May 27,2015, 12:06P</p>
+				<details open>
+					<summary>
+						<p class="smalltext"> Edited by <a href="http://www.vox.com/authors/joseph-stromberg">JOSEPH STRMBERG</a></p>
+					</summary>
+					<time pubdate class="smalltext"> May 27,2015, 12:06P</time>
+				</details>
 				<p class="embedcontent">EMBED: <i class="fa fa-gg-circle"></i>
 				</p>
-			</div>
+			</header>
 			<div class="middlecontent">
 				<i class="fa fa-angle-up"></i>
 			</div>
-			<div class="endcontent">
+			<nav class="endcontent" role="navigation">
 				<ol>
-					<li class="current"><a href="file:///C:/Users/wgao.LPC-1157/Desktop/__MACOSX/voxcopy/vox.html">Why are people so obsessed with Mars?</li>
+					<li class="current"><a href="#">Why are people so obsessed with Mars?</a></li>
 					<li> How hard would it be to get humans to Mars?</li>
 					<li>Is there life on Mars right now? </li>
 					<li> How have humans explored Mars so&nbsp;far?</li>
@@ -57,15 +62,12 @@ The file also links to an external CSS file. However, Javascript file has to wai
 					<li>Share this card stack!</li>
 					<li>Explore</li>
 				</ol>
-			</div>	
-		</div>
-		<div class="one-col">
-			<p>One Column</p>
-		</div>
-		<div class="seven-col">
+			</nav>	
+		</aside>
+		<article class="seven-col four-offset" role="main">
 			<div class="info-page">
 				<div class="goback"><a href="http://www.vox.com/cards/mars-exploration/how-hard-would-it-be-to-get-humans-to-mars"><i class="fa fa-angle-left fa-2x" id="go-back"></i></a></div>
-				<span class="page-number"><b>CARD 3</b> OF <b>13</b></span>
+				<span class="page-number"><b>CARD 1</b> OF <b>13</b></span>
 				<div class="goforward"><a href="http://www.vox.com/cards/mars-exploration/is-there-currently-life-on-mars"><i class="fa fa-angle-right fa-2x" id="go-forward"></i></a></div>
 			</div>
 			<h3>Why are people so obsessed with Mars?</h3>
@@ -82,11 +84,11 @@ The file also links to an external CSS file. However, Javascript file has to wai
 				<i class="fa fa-thumbs-o-up"></i>
 				<i class="fa fa-thumbs-o-down"></i>
 		    </h3>
-		    <div class="info-page">
+		    <footer class="info-page">
 				<div class="goback"><a href="http://www.vox.com/cards/mars-exploration/how-hard-would-it-be-to-get-humans-to-mars"><i class="fa fa-angle-left fa-2x" id="go-back-one"></i><span class="gobackword">&nbsp; last</span></a></div> 
 				<div class="goforward"><a href="http://www.vox.com/cards/mars-exploration/is-there-currently-life-on-mars">next &nbsp; <i class="fa fa-angle-right fa-2x" id="go-forward-one"></i></a></div>
-			</div>
-		</div>
+			</footer>
+		</article>
 	</div>
 </section>
 </body>
